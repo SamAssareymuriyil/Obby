@@ -14,7 +14,7 @@ Meet Obby. It is an assistive device for when playing the video game, Minecraft:
  - Buzzer; will alert the player when hunger is below a certain value
  - Arduino Uno; controls the servo motor as well as the LEDs
  - Wires, resistors, breadboard etc. 
-The Obby design was based around the components available to us at this time due to the pandemic. 
+The Obby design was based around the components available to us at this time due to this unprecedented time. 
 
 ### Explanation of Feasibility
 After many revisions, we decided to go with the idea of using gameplay in Minecraft to show statistics in real life. In other words, it will be the player’s assistant. Our new project will be capable of performing many fascinating tasks like indicating when the player’s health or food bar is low (with the help of LED’s and a buzzer), showing which direction the player is facing, and when the player is in water. We believe this is possible to create since we already have an idea on how to make it. All of our materials which include a servo motor, LED, RGB LED, and a buzzer are all available. As a team, we hope to successfully create this challenging project.  
