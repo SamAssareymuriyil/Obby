@@ -1,5 +1,5 @@
 # Obby
-## General Idea
+## About
 Meet Obby. It is an assistive device for when playing the video game, Minecraft: Java Edition. It has many functionalities such as:
  - Compass to tell what direction the user is facing
  - LED light that turns on when swimming
