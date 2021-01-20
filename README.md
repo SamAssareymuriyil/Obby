@@ -1,10 +1,10 @@
 # Obby
 ## About
-Meet Obby. It is an assistive device for when playing the video game, Minecraft: Java Edition. It has many functionalities such as:
- - Compass to tell what direction the user is facing
- - LED light that turns on when swimming 
- - RGB LED light that changes colours based on your hunger (low hunger = red, medium hunger = yellow, high hunger = green)
- - Food Reminder Buzzer that buzzes when your hunger bar is under six points.
+Meet Obby! It is an assistive device for when playing the video game, Minecraft: Java Edition. It has many functionalities such as:
+ - A compass to tell what direction the user is facing
+ - An LED light that turns on when swimming 
+ - An RGB LED light that changes colours based on your hunger (low hunger = red, medium hunger = yellow, high hunger = green)
+ - A Food Reminder Buzzer that buzzes when your hunger bar is under six points.
 
 ## Feasibility
 ### List of Components
