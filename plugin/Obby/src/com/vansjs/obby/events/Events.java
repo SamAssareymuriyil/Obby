@@ -11,6 +11,8 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 
+import java.util.Arrays;
+
 public class Events implements Listener {
 
 //    @EventHandler
@@ -47,9 +49,10 @@ public class Events implements Listener {
             yaw += 360;
         }
 
-        player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
+        // player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
 
-        SerialPort.getCommPorts();
+        SerialPort[] ports = SerialPort.getCommPorts();
+        player.sendMessage(ChatColor.BLUE + Arrays.toString(ports));
     }
 
     @EventHandler
