@@ -1,5 +1,6 @@
 package com.vansjs.obby.events;
 
+import com.fazecast.jSerialComm.SerialPort;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Entity;
@@ -36,6 +37,7 @@ public class Events implements Listener {
 
     @EventHandler
     public static void getPlayerDirection(PlayerMoveEvent event) {
+
         Player player = event.getPlayer();
 
         float yawF = player.getLocation().getYaw();
@@ -47,6 +49,7 @@ public class Events implements Listener {
 
         player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
 
+        SerialPort.getCommPorts();
     }
 
     @EventHandler
