@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/plugin/Dependencies/spigot-api-1.16.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugin/Dependencies/jSerialComm-2.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

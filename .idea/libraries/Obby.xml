@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Obby">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/plugin/Server/plugins/Obby.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

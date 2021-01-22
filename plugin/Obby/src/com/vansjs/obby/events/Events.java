@@ -64,5 +64,23 @@ public class Events implements Listener {
 
         player.sendMessage(ChatColor.DARK_RED + "Your health is at " + health);
     }
+    @EventHandler
+    public static void getPlayerHunger(PlayerMoveEvent event) {
+        Player player = event.getPlayer();
+
+        double hungerF = player.getFoodLevel();
+        int hunger = (int) Math.ceil(hungerF);
+
+        player.sendMessage(ChatColor.RED + "Your hunger is at " + hunger);
+    }
+    @EventHandler
+    public static void getPlayerExhaustion(PlayerMoveEvent event) {
+        Player player = event.getPlayer();
+
+        double exhaustionF = player.getExhaustion();
+        int exhaustion = (int) Math.ceil(exhaustionF);
+
+        player.sendMessage(ChatColor.DARK_BLUE + "Your exhaustion is at " + exhaustion);
+    }
 
 }

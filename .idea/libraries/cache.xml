@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cache">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/plugin/Server/cache/mojang_1.16.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugin/Server/cache/patched_1.16.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
