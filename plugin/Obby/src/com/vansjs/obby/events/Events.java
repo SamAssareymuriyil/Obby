@@ -9,6 +9,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 import java.util.Arrays;
 
@@ -35,7 +36,12 @@ public class Events implements Listener {
 //        }
 //    }
 //
+    @EventHandler
+    public static void onPlayerJoin (PlayerJoinEvent event){
+        Player player = event.getPlayer();
+        player.sendMessage(ChatColor.LIGHT_PURPLE + "Welcome to the Server!! :)");
 
+    }
 
     @EventHandler
     public static void onPlayerMove(PlayerMoveEvent event) {
@@ -59,6 +65,11 @@ public class Events implements Listener {
         player.sendMessage(ChatColor.YELLOW + "Your hunger is at " + hunger);
 //        player.sendMessage(ChatColor.AQUA + "Your exhaustion is at " + exhaustion);
         player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
+    }
+
+    @EventHandler
+    public static void onPlayerLeave (PlayerQuitEvent event){
+        System.out.println("Player leaves");
     }
 
 }
