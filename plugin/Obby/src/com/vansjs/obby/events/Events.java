@@ -1,6 +1,5 @@
 package com.vansjs.obby.events;
 
-import com.fazecast.jSerialComm.SerialPort;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Entity;
@@ -37,50 +36,29 @@ public class Events implements Listener {
 //    }
 //
 
+
     @EventHandler
-    public static void getPlayerDirection(PlayerMoveEvent event) {
-
+    public static void onPlayerMove(PlayerMoveEvent event) {
         Player player = event.getPlayer();
-
-        float yawF = player.getLocation().getYaw();
-        int yaw = (int) Math.floor(yawF);
-
+        int health = (int) Math.ceil(player.getHealth());
+        int hunger = (int) Math.ceil(player.getFoodLevel());
+//        double exhaustion = player.getExhaustion();
+        int yaw = (int) Math.floor(player.getLocation().getYaw());
         if (yaw < 0) {
             yaw += 360;
         }
+        int x = player.getLocation().getBlockX();
+        int y = player.getLocation().getBlockY();
+        int z = player.getLocation().getBlockZ();
+        Material block = player.getWorld().getBlockAt(x, y, z).getType();
 
-        // player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
-
-        SerialPort[] ports = SerialPort.getCommPorts();
-        player.sendMessage(ChatColor.BLUE + Arrays.toString(ports));
-    }
-
-    @EventHandler
-    public static void getPlayerHealth(PlayerMoveEvent event) {
-        Player player = event.getPlayer();
-
-        double healthF = player.getHealth();
-        int health = (int) Math.ceil(healthF);
-
+        if (block == Material.WATER) {
+            player.sendMessage(ChatColor.GREEN + "You are standing on Water!");
+        }
         player.sendMessage(ChatColor.DARK_RED + "Your health is at " + health);
-    }
-    @EventHandler
-    public static void getPlayerHunger(PlayerMoveEvent event) {
-        Player player = event.getPlayer();
-
-        double hungerF = player.getFoodLevel();
-        int hunger = (int) Math.ceil(hungerF);
-
-        player.sendMessage(ChatColor.RED + "Your hunger is at " + hunger);
-    }
-    @EventHandler
-    public static void getPlayerExhaustion(PlayerMoveEvent event) {
-        Player player = event.getPlayer();
-
-        double exhaustionF = player.getExhaustion();
-        int exhaustion = (int) Math.ceil(exhaustionF);
-
-        player.sendMessage(ChatColor.DARK_BLUE + "Your exhaustion is at " + exhaustion);
+        player.sendMessage(ChatColor.YELLOW + "Your hunger is at " + hunger);
+//        player.sendMessage(ChatColor.AQUA + "Your exhaustion is at " + exhaustion);
+        player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
     }
 
 }
