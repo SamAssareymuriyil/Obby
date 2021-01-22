@@ -1,4 +1,10 @@
 {
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2021-01-21 18:14:13 -0500"
+    },
+    "done": true
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:savanna_plateau": "2021-01-21 14:41:05 -0500",

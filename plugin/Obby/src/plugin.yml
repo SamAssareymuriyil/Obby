@@ -1,0 +1,6 @@
+  name: Obby
+  version: 1.0
+  author: vans.js
+  main: com.vansjs.obby.Obby
+  api-version: 1.14
+#  depend: []

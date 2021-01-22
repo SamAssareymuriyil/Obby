@@ -1,51 +1,81 @@
-[23:23:18] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[23:23:18] [main/INFO]: Found new data pack file/bukkit, loading it automatically
-[23:23:18] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[23:23:19] [Worker-Main-8/INFO]: Loaded 7 recipes
-[23:23:21] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[23:23:21] [Server thread/INFO]: Loading properties
-[23:23:21] [Server thread/INFO]: This server is running Paper version git-Paper-436 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[23:23:21] [Server thread/INFO]: Debug logging is disabled
-[23:23:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[23:23:21] [Server thread/INFO]: Using 4 threads for Netty based IO
-[23:23:21] [Server thread/INFO]: Default game type: SURVIVAL
-[23:23:21] [Server thread/INFO]: Generating keypair
-[23:23:21] [Server thread/INFO]: Starting Minecraft server on *:25565
-[23:23:21] [Server thread/INFO]: Using default channel type
-[23:23:22] [Server thread/INFO]: Preparing level "world"
-[23:23:23] [Server thread/WARN]: Unable to find spawn biome
-[23:23:31] [Server thread/WARN]: Unable to find spawn biome
-[23:23:32] [Server thread/WARN]: Unable to find spawn biome
-[23:23:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[23:23:33] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[23:23:33] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[23:23:33] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[23:23:33] [Server thread/INFO]: Time elapsed: 590 ms
-[23:23:33] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[23:23:33] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[23:23:33] [Worker-Main-6/INFO]: Preparing spawn area: 0%
-[23:23:33] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[23:23:33] [Server thread/INFO]: Time elapsed: 650 ms
-[23:23:33] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[23:23:34] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[23:23:34] [Worker-Main-6/INFO]: Preparing spawn area: 0%
-[23:23:34] [Worker-Main-8/INFO]: Preparing spawn area: 0%
-[23:23:34] [Server thread/INFO]: Time elapsed: 666 ms
-[23:23:34] [Server thread/INFO]: Running delayed init tasks
-[23:23:34] [Server thread/INFO]: Done (13.657s)! For help, type "help"
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 11. When Paper for Minecraft 1.17 is
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 11 will
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_271
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java11
-[23:23:34] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
-[23:23:34] [Server thread/INFO]: Timings Reset
+[18:22:28] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:22:29] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[18:22:29] [Worker-Main-5/INFO]: Loaded 7 recipes
+[18:22:30] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[18:22:30] [Server thread/INFO]: Loading properties
+[18:22:30] [Server thread/INFO]: This server is running Paper version git-Paper-436 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[18:22:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:22:30] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:22:30] [Server thread/INFO]: Debug logging is disabled
+[18:22:30] [Server thread/INFO]: Default game type: SURVIVAL
+[18:22:30] [Server thread/INFO]: Generating keypair
+[18:22:30] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:22:30] [Server thread/INFO]: Using default channel type
+[18:22:31] [Server thread/INFO]: [Obby] Loading Obby v1.0
+[18:22:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:22:31] [Server thread/INFO]: Preparing level "world"
+[18:22:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:22:32] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[18:22:32] [Server thread/INFO]: Preparing spawn area: 0%
+[18:22:32] [Server thread/INFO]: Time elapsed: 376 ms
+[18:22:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:22:32] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[18:22:32] [Server thread/INFO]: Preparing spawn area: 0%
+[18:22:32] [Server thread/INFO]: Time elapsed: 73 ms
+[18:22:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:22:32] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[18:22:33] [Server thread/INFO]: Time elapsed: 70 ms
+[18:22:33] [Server thread/INFO]: [Obby] Enabling Obby v1.0
+[18:22:33] [Server thread/INFO]: Plugin Started
+[18:22:33] [Server thread/INFO]: Running delayed init tasks
+[18:22:33] [Server thread/INFO]: Done (2.495s)! For help, type "help"
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 11. When Paper for Minecraft 1.17 is
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 11 will
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_271
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java11
+[18:22:33] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[18:22:33] [Server thread/INFO]: Timings Reset
+[18:22:36] [User Authenticator #1/INFO]: UUID of player Moosw is e1c25ca1-977d-43ea-b40f-169aabba8790
+[18:22:36] [Server thread/INFO]: Moosw joined the game
+[18:22:36] [Server thread/INFO]: Moosw[/198.84.168.136:59541] logged in with entity id 384 at ([world]11.647054634454802, 65.0, 4.944563860442853)
+[18:22:45] [User Authenticator #1/INFO]: UUID of player TheYushinator is 75b257e9-e7a9-4f90-817e-76d4d4d8dd9d
+[18:22:45] [Server thread/INFO]: TheYushinator joined the game
+[18:22:45] [Server thread/INFO]: TheYushinator[/192.168.56.1:65211] logged in with entity id 416 at ([world]11.511337173732773, 69.0, 11.409597149652242)
+[18:23:17] [Server thread/INFO]: Moosw was slain by TheYushinator
+[18:23:21] [Async Chat Thread - #0/INFO]: <TheYushinator> 19 health
+[18:23:54] [Server thread/INFO]: Moosw was slain by TheYushinator
+[18:23:57] [Server thread/INFO]: Moosw lost connection: Disconnected
+[18:23:57] [Server thread/INFO]: Moosw left the game
+[18:24:10] [Server thread/INFO]: TheYushinator was slain by Zombie
+[18:24:35] [Server thread/INFO]: TheYushinator was slain by Zombie
+[18:25:07] [Server thread/INFO]: TheYushinator issued server command: /gamemode creative
+[18:25:07] [Server thread/INFO]: [TheYushinator: Set own game mode to Creative Mode]
+[18:29:04] [Server thread/INFO]: TheYushinator issued server command: /enchant @a minecraft:sharpness 5
+[18:29:04] [Server thread/INFO]: [TheYushinator: Applied enchantment Sharpness V to TheYushinator's item]
+[18:29:23] [Server thread/INFO]: TheYushinator issued server command: /enchant @a minecraft:smite 5
+[18:29:23] [Server thread/INFO]: [TheYushinator: Applied enchantment Smite V to TheYushinator's item]
+[18:33:48] [Server thread/INFO]: TheYushinator issued server command: /locate stronghold
+[18:34:12] [Server thread/INFO]: TheYushinator issued server command: /locate stronghold
+[18:35:49] [Server thread/INFO]: TheYushinator has made the advancement [Eye Spy]
+[18:36:38] [Server thread/INFO]: TheYushinator issued server command: /gamemode SP
+[18:36:41] [Server thread/INFO]: TheYushinator issued server command: /gamemode spectator
+[18:36:41] [Server thread/INFO]: [TheYushinator: Set own game mode to Spectator Mode]
+[18:36:49] [Server thread/INFO]: TheYushinator issued server command: /gamemode creative
+[18:36:49] [Server thread/INFO]: [TheYushinator: Set own game mode to Creative Mode]
+[18:37:01] [Server thread/INFO]: TheYushinator has made the advancement [The End?]
+[18:37:02] [Server thread/INFO]: Scanning for legacy world dragon fight...
+[18:37:02] [Server thread/INFO]: Found that the dragon has not yet been killed in this world.
+[18:37:11] [Server thread/INFO]: TheYushinator issued server command: /enchant @a minecraft:sharpness
+[18:37:11] [Server thread/INFO]: [TheYushinator: Applied enchantment Sharpness I to TheYushinator's item]
+[18:40:39] [Server thread/INFO]: TheYushinator lost connection: Disconnected
+[18:40:39] [Server thread/INFO]: TheYushinator left the game
