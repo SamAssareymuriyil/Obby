@@ -2,67 +2,41 @@ package com.vansjs.obby.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import java.io.IOException;
 import com.fazecast.jSerialComm.SerialPort;
-
-import java.util.Arrays;
-
-
-
+import java.io.PrintWriter;
 
 public class Events implements Listener {
-static String port = "COM4"; // TODO: device name, must be changed
-//    @EventHandler
-//    public static void onPlayerJoin(PlayerJoinEvent event) {
-//        Player player = event.getPlayer();
-//        player.sendMessage(ChatColor.LIGHT_PURPLE + "Welcome to the Server!! :)");
-//    }
+    static String port = "COM4"; // TODO: device name, must be changed
+    static SerialPort chosenPort = SerialPort.getCommPort(port);
+    static Thread thread = new Thread();
+    static PrintWriter output = new PrintWriter(chosenPort.getOutputStream());
 
-//    @EventHandler
-//    public static void onPlayerWalk(PlayerMoveEvent event) {
-//        Player player = event.getPlayer();
-//
-//        int x = player.getLocation().getBlockX();
-//        int y = player.getLocation().getBlockY();
-//        int z = player.getLocation().getBlockZ();
-//
-//        Material block = player.getWorld().getBlockAt(x, y-1, z).getType();
-//
-//        if (block == Material.STONE) {
-//            player.sendMessage(ChatColor.GREEN + "You are standing on Stone!");
-//        }
-//    }
-//
+    // connect to serial port, if accessible
     @EventHandler
     public static void onPlayerJoin (PlayerJoinEvent event){
         Player player = event.getPlayer();
         player.sendMessage(ChatColor.LIGHT_PURPLE + "Welcome to the Server!! :)");
-        SerialPort sp = SerialPort.getCommPort(port);
-        sp.setComPortParameters(9600, 8, 1, 0); // default connection settings for Arduino
-        sp.setComPortTimeouts(SerialPort.TIMEOUT_WRITE_BLOCKING, 0, 0); // block until bytes can be written
-
-        if (sp.openPort()) {
-            System.out.println("Port is open :)");
-        } else {
-            System.out.println("Failed to open port :(");
-            return;
+        if(chosenPort.openPort()){
+            try {Thread.sleep(100); } catch(Exception e) {}
+            player.sendMessage(ChatColor.GREEN + "Obby is connected. :)");
+        }
+        else{
+            player.sendMessage(ChatColor.RED + "OBBY IS NOT CONNECTED, CHECK COM PORT");
         }
     }
 
+    // update player status as they move
     @EventHandler
-    public static void onPlayerMove(PlayerMoveEvent event) throws IOException, InterruptedException {
+    public static void onPlayerMove(PlayerMoveEvent event){
         Player player = event.getPlayer();
         int health = (int) Math.ceil(player.getHealth());
         int hunger = (int) Math.ceil(player.getFoodLevel());
-//        double exhaustion = player.getExhaustion();
         int yaw = (int) Math.floor(player.getLocation().getYaw());
         if (yaw < 0) {
             yaw += 360;
@@ -81,35 +55,27 @@ static String port = "COM4"; // TODO: device name, must be changed
         }
         player.sendMessage(ChatColor.DARK_RED + "Your health is at " + health);
         player.sendMessage(ChatColor.YELLOW + "Your hunger is at " + hunger);
-//        player.sendMessage(ChatColor.AQUA + "Your exhaustion is at " + exhaustion);
         player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
 
-        String num = "";
-        if(yaw < 100){num = "0" + Integer.toString(yaw);}
-        else{num = Integer.toString(yaw);}
-        if(health < 10){num+= "0" + Integer.toString(health) + Integer.toString(water);}
-        else{num+= Integer.toString(health) + Integer.toString(water);}
-        if(hunger < 10){num+= "0" + Integer.toString(hunger);}
-        else{num+= Integer.toString(hunger);}
-        int i = Integer.parseInt(num);
+        // send info to serial
+        output.print(4000+yaw);
+        output.flush();
+        try {Thread.sleep(300);} catch(Exception e) {}
+        output.print(3000+health);
+        output.flush();
+        try {Thread.sleep(100);} catch(Exception e) {}
+        output.print(2000+water);
+        output.flush();
+        try {Thread.sleep(100);} catch(Exception e) {}
+        output.print(1000+hunger);
+        output.flush();
+        try {Thread.sleep(100);} catch(Exception e) {}
 
-        SerialPort sp = SerialPort.getCommPort(port);
-        sp.getOutputStream().write(i);
-        sp.getOutputStream().flush();
-        System.out.println("Sent number: " + i);
-
-        Thread.sleep(250);
+        thread.start();
     }
 
     @EventHandler
     public static void onPlayerLeave (PlayerQuitEvent event){
-        SerialPort sp = SerialPort.getCommPort(port);
-        if (sp.closePort()) {
-            System.out.println("Port is closed :)");
-        } else {
-            System.out.println("Failed to close port :(");
-            return;
-        }
+        chosenPort.closePort();
     }
-
 }
