@@ -8,26 +8,24 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import com.fazecast.jSerialComm.SerialPort;
-import java.io.PrintWriter;
+
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Events implements Listener {
-    static String port = "COM4"; // TODO: device name, must be changed
-    static SerialPort chosenPort = SerialPort.getCommPort(port);
-    static Thread thread = new Thread();
-    static PrintWriter output = new PrintWriter(chosenPort.getOutputStream());
 
-    // connect to serial port, if accessible
+    // provide starter data for python
     @EventHandler
     public static void onPlayerJoin (PlayerJoinEvent event){
         Player player = event.getPlayer();
         player.sendMessage(ChatColor.LIGHT_PURPLE + "Welcome to the Server!! :)");
-        if(chosenPort.openPort()){
-            try {Thread.sleep(100); } catch(Exception e) {}
-            player.sendMessage(ChatColor.GREEN + "Obby is connected. :)");
-        }
-        else{
-            player.sendMessage(ChatColor.RED + "OBBY IS NOT CONNECTED, CHECK COM PORT");
+        try {
+            FileWriter myWriter = new FileWriter("C:/Users/Sam Abraham/Documents/Grade12/Computer Engineering/Obby/plugin/Obby/src/data.txt"); //TODO: Change to local file path
+            myWriter.write(0+"\n"+0+"\n"+0+"\n"+0+"\nT");
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
         }
     }
 
@@ -48,34 +46,36 @@ public class Events implements Listener {
 
         int water;
         if (block == Material.WATER) {
-            player.sendMessage(ChatColor.GREEN + "You are standing on Water!");
             water = 1;
         }else{
             water = 0;
         }
-        player.sendMessage(ChatColor.DARK_RED + "Your health is at " + health);
-        player.sendMessage(ChatColor.YELLOW + "Your hunger is at " + hunger);
-        player.sendMessage(ChatColor.GOLD + "You are facing: " + yaw);
 
-        // send info to serial
-        output.print(4000+yaw);
-        output.flush();
-        try {Thread.sleep(300);} catch(Exception e) {}
-        output.print(3000+health);
-        output.flush();
-        try {Thread.sleep(100);} catch(Exception e) {}
-        output.print(2000+water);
-        output.flush();
-        try {Thread.sleep(100);} catch(Exception e) {}
-        output.print(1000+hunger);
-        output.flush();
-        try {Thread.sleep(100);} catch(Exception e) {}
+        // set values
+        yaw+=4000; health+=3000; water+=2000; hunger+=1000;
 
-        thread.start();
+        // write to txt
+        try {
+            FileWriter myWriter = new FileWriter("C:/Users/Sam Abraham/Documents/Grade12/Computer Engineering/Obby/plugin/Obby/src/data.txt"); //TODO: Change to local file path
+            myWriter.write(yaw+"\n"+health+"\n"+water+"\n"+hunger+"\nT");
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
     }
 
     @EventHandler
     public static void onPlayerLeave (PlayerQuitEvent event){
-        chosenPort.closePort();
+        // close python loop
+        try {
+            FileWriter myWriter = new FileWriter("C:/Users/Sam Abraham/Documents/Grade12/Computer Engineering/Obby/plugin/Obby/src/data.txt"); //TODO: Change to local file path
+            myWriter.write(0+"\n"+0+"\n"+0+"\n"+0+"\nF");
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
     }
 }

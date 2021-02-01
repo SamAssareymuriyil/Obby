@@ -1,66 +1,79 @@
-[23:04:18] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[23:04:18] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[23:04:20] [Worker-Main-3/INFO]: Loaded 7 recipes
-[23:04:24] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[23:04:24] [Server thread/INFO]: Loading properties
-[23:04:24] [Server thread/INFO]: This server is running Paper version git-Paper-436 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[23:04:24] [Server thread/INFO]: Debug logging is disabled
-[23:04:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[23:04:25] [Server thread/INFO]: Using 4 threads for Netty based IO
-[23:04:25] [Server thread/INFO]: Default game type: SURVIVAL
-[23:04:25] [Server thread/INFO]: Generating keypair
-[23:04:25] [Server thread/INFO]: Starting Minecraft server on *:25565
-[23:04:25] [Server thread/INFO]: Using default channel type
-[23:04:26] [Server thread/INFO]: [Obby] Loading Obby v1.0
-[23:04:26] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[23:04:26] [Server thread/INFO]: Preparing level "world"
-[23:04:26] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[23:04:27] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[23:04:27] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:27] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:27] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:28] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:28] [Server thread/INFO]: Preparing spawn area: 11%
-[23:04:29] [Server thread/INFO]: Time elapsed: 2398 ms
-[23:04:29] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[23:04:29] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[23:04:29] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:29] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:30] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:30] [Worker-Main-1/INFO]: Preparing spawn area: 99%
-[23:04:31] [Server thread/INFO]: Time elapsed: 1856 ms
-[23:04:31] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[23:04:31] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[23:04:31] [Server thread/INFO]: Preparing spawn area: 0%
-[23:04:31] [Server thread/INFO]: Preparing spawn area: 2%
-[23:04:32] [Worker-Main-6/INFO]: Preparing spawn area: 100%
-[23:04:32] [Worker-Main-1/INFO]: Preparing spawn area: 100%
-[23:04:32] [Server thread/INFO]: Time elapsed: 1651 ms
-[23:04:32] [Server thread/INFO]: [Obby] Enabling Obby v1.0
-[23:04:32] [Server thread/INFO]: Plugin Started
-[23:04:32] [Server thread/INFO]: Running delayed init tasks
-[23:04:32] [Server thread/INFO]: Done (8.087s)! For help, type "help"
-[23:04:32] [Server thread/INFO]: Timings Reset
-[23:04:39] [User Authenticator #1/INFO]: UUID of player dontuworry13 is 2873d40d-9d69-4eae-ace8-2925b04765af
-[23:04:40] [Server thread/INFO]: dontuworry13 joined the game
-[23:04:40] [Server thread/INFO]: dontuworry13[/127.0.0.1:50539] logged in with entity id 448 at ([world]-6.731650260114141, 67.0, 7.3000000119209325)
-[23:06:06] [Server thread/INFO]: Stopping the server
-[23:06:06] [Server thread/INFO]: Stopping server
-[23:06:06] [Server thread/INFO]: [Obby] Disabling Obby v1.0
-[23:06:06] [Server thread/INFO]: Plugin Stopped.
-[23:06:06] [Server thread/INFO]: Saving players
-[23:06:06] [Server thread/INFO]: dontuworry13 lost connection: Server closed
-[23:06:06] [Server thread/INFO]: dontuworry13 left the game
-[23:06:06] [Server thread/INFO]: Saving worlds
-[23:06:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[23:06:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:06:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[23:06:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:06:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[23:06:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:06:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:06:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:06:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:06:11] [Server thread/INFO]: Flushing Chunk IO
-[23:06:11] [Server thread/INFO]: Closing Thread Pool
-[23:06:11] [Server thread/INFO]: Closing Server
+[21:33:02] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:33:03] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[21:33:03] [Worker-Main-4/INFO]: Loaded 7 recipes
+[21:33:05] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[21:33:05] [Server thread/INFO]: Loading properties
+[21:33:05] [Server thread/INFO]: This server is running Paper version git-Paper-436 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[21:33:05] [Server thread/INFO]: Debug logging is disabled
+[21:33:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:33:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:33:05] [Server thread/INFO]: Default game type: SURVIVAL
+[21:33:05] [Server thread/INFO]: Generating keypair
+[21:33:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:33:06] [Server thread/INFO]: Using default channel type
+[21:33:08] [Server thread/INFO]: [Obby] Loading Obby v1.0
+[21:33:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:33:08] [Server thread/INFO]: Preparing level "world"
+[21:33:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:33:08] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[21:33:08] [Server thread/INFO]: Preparing spawn area: 0%
+[21:33:08] [Server thread/INFO]: Time elapsed: 453 ms
+[21:33:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:33:09] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[21:33:09] [Server thread/INFO]: Time elapsed: 455 ms
+[21:33:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:33:09] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[21:33:09] [Server thread/INFO]: Time elapsed: 397 ms
+[21:33:09] [Server thread/INFO]: [Obby] Enabling Obby v1.0
+[21:33:09] [Server thread/INFO]: Plugin Started
+[21:33:09] [Server thread/INFO]: Running delayed init tasks
+[21:33:09] [Server thread/INFO]: Done (4.367s)! For help, type "help"
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 11. When Paper for Minecraft 1.17 is
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 11 will
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_281
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java11
+[21:33:09] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[21:33:09] [Server thread/INFO]: Timings Reset
+[21:33:23] [User Authenticator #1/INFO]: UUID of player Moosw is e1c25ca1-977d-43ea-b40f-169aabba8790
+[21:33:23] [Server thread/INFO]: Moosw joined the game
+[21:33:23] [Server thread/INFO]: Moosw[/192.168.86.41:50284] logged in with entity id 457 at ([world]-3.2973867560471617, 64.0, -62.54016858977359)
+[21:35:54] [Server thread/INFO]: Moosw was slain by Zombie
+[21:37:16] [Server thread/INFO]: Moosw was shot by Skeleton
+[21:37:35] [Async Chat Thread - #0/INFO]: <Moosw> \gamemode c
+[21:37:44] [Server thread/INFO]: Moosw issued server command: /gamemode c
+[21:43:23] [Server thread/INFO]: Moosw was pricked to death
+[21:43:32] [Server thread/INFO]: Moosw lost connection: Disconnected
+[21:43:32] [Server thread/INFO]: Moosw left the game
+[21:44:09] [User Authenticator #2/INFO]: UUID of player Moosw is e1c25ca1-977d-43ea-b40f-169aabba8790
+[21:44:09] [Server thread/INFO]: Moosw joined the game
+[21:44:09] [Server thread/INFO]: Moosw[/192.168.86.41:50876] logged in with entity id 2767 at ([world]9.5, 65.0, -1.5)
+[21:44:19] [Server thread/INFO]: Moosw lost connection: Disconnected
+[21:44:19] [Server thread/INFO]: Moosw left the game
+[21:51:21] [Server thread/INFO]: Stopping the server
+[21:51:21] [Server thread/INFO]: Stopping server
+[21:51:21] [Server thread/INFO]: [Obby] Disabling Obby v1.0
+[21:51:21] [Server thread/INFO]: Plugin Stopped.
+[21:51:22] [Server thread/INFO]: Saving players
+[21:51:22] [Server thread/INFO]: Saving worlds
+[21:51:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:51:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:51:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:51:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:51:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:51:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:51:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:51:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:51:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:51:22] [Server thread/INFO]: Flushing Chunk IO
+[21:51:22] [Server thread/INFO]: Closing Thread Pool
+[21:51:22] [Server thread/INFO]: Closing Server
